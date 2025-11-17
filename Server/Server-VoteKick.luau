@@ -50,11 +50,11 @@ return function(Vargs)
 				if Yes > No then
 					if Player then
 						Player:Kick(`Vote kicked. Reason: {args[2] or "No reason provided."}`)
-						Logs:AddLog("Script", `{Player.Name} was votekicked. Reason: {args[2] or "No reason provided."}`)
+						Logs:AddLog("Script", `{service.FormatPlayer(Player)} was votekicked. Reason: {args[2] or "No reason provided."}`)
 					end
-					server.Functions.Notify("Vote kick", `{Player.Name} was vote kicked.`, {plr})
+					server.Functions.Notify("Vote kick", `service.FormatPlayer(Player)} was vote kicked.`, {plr})
 				else
-					server.Functions.Notify("Vote kick", `{Player.Name} was not vote kicked.`, {plr})
+					server.Functions.Notify("Vote kick", `service.FormatPlayer(Player)} was not vote kicked.`, {plr})
 				end
 			end)
 		end
