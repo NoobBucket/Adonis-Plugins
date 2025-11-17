@@ -5,7 +5,7 @@ return function(Vargs)
 	server.Commands.VoteKick = {
 		Prefix = server.Settings.Prefix;
 		Commands = {"votekick"};
-		Args = {"Player", "Reason"};
+		Args = {"player", "reason"};
 		Description = "Votekick a player to be kicked";
 		Hidden = false;
 		Fun = false;
